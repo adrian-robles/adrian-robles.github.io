@@ -1,5 +1,5 @@
 
-/* glogal */
+/* global */
 body {
   width: 80%;
 }
@@ -21,6 +21,7 @@ a.nav-link:hover {
   color: $black-shade4 !important;
 }
 
+/* search bar */
 #search-input {
   color: $black-shade1 !important;
 }
@@ -36,14 +37,25 @@ a.nav-link:hover {
   background-color: $black-shade2;
 }
 
-/* content */
 
+
+/* content */
 .content-container {
   width: 95%;
   position: relative;
   bottom: 10vh;
   color: $black-shade1 !important;
 }
+
+/* home page */
+#intro {
+  width: 49%;
+}
+
+#pic {
+  width: 49%;
+}
+
 
 /* blog page content */
 .blog-header {
@@ -78,17 +90,86 @@ ul.posts li {
 
 }
 
-/* contact page */
 
-.icon-social a {
-  font-size: 4em;
-  color: $black-shade4;
+/* resume page */
+#res-header {
+  padding: 40px 0 30px 20px;
 }
 
-.icon-social a:hover {
-  color: $black-shade2;
+#res-header h1 {
+  display: inline;
 }
 
+#down-btn {
+  float: right;
+}
+
+#resume {
+  color: $black-shade1 !important;
+}
+
+#resume:hover {
+  color: $black-shade4 !important;
+}
+
+
+#res-header h4 {
+  margin: 15px 0;
+}
+
+#home {
+  color: $black-shade1 !important;
+  text-decoration: underline;
+}
+
+#home:hover {
+  color: $black-shade4 !important;
+}
+
+#chrono {
+  width: 60%;
+}
+#chrono h6 {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+#chrono p {
+  font-size: .88em;
+}
+
+#chrono ul {
+  padding-left: 20px;
+  font-size: .88em;
+  margin-bottom: 20;
+}
+
+#pers {
+  width: 40%;
+  text-align: justify;
+}
+
+#pers h5 {
+  font-size: .9em;
+  font-weight: bold;
+}
+
+#pers p {
+  font-size: .85em;
+}
+#pers ul {
+  list-style: none;
+  padding: 0;
+  font-size: .85em;
+}
+
+#social-icons {
+  color: $brand-color;
+}
+
+#social-icons:hover {
+  color: $black-shade4 !important;
+}
 
 /* footer */
 .page-footer {

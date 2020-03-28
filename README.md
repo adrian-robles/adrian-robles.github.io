@@ -1,10 +1,12 @@
 # how I built my jekyll website
 
-## it was not my first, I screwed up the first 5
+## it was not my first, I screwed up the first 5... 6
 
 ## what I wanted my website/blog to have
 
   * [ ] 100% compatible with GitHub
+
+  * [ ] work on the gh-pages branch
   
   * [ ] Ajax search with instant results
 
@@ -75,6 +77,18 @@
   * SEO
     - -https://blog.webjeda.com/optimize-jekyll-seo/
 
+  * Mailchimp
+
+  * Disqus
+
+  ## Gmail account
+  jekyllBlog@outlook.com
+  cura17CR04$
+
+  ## GitHub Accout
+  JekyllGithubs
+  cura17CR04$
+
   ## Step by Step
 
   1. Open the terminal and navigate to where I store my projects.
@@ -84,6 +98,8 @@
       $ jekyll new blogName
       $ cd blogName
       ~/blogName $ bundle exec jekyll serve
+
+      *ensure the blogName and the GitHub username are the same ????
   
   3. Browse to http://localhost:4000 and verify site is working
 
@@ -91,4 +107,63 @@
 
   5. Open the blogName folder in Visual Studio Code
 
-  6. 
+  6. Open the _config.yml file and update/add the following:
+      
+    **site settings**
+
+      * title: the name of the website
+      * email: where I want to be contacted at
+      * description: why did I make this
+      * author: me
+      * baseurl: comment out using #
+      * url: this is the github URL (https://blogName.github.io)
+      * social media usernames: me and more me
+      * logo: the URL path to the file the contains the logo
+      * lang: what language are you going to write
+
+    **build settings**
+
+      * markdown: kramdown
+      * highlighter: rouge
+      * permalink: /blog/:year/:month/:day/:title
+      * paginate: (select a number)
+      * sass:
+          sass_dir: _sass
+          style: compressed
+      * comment out theme: minima
+      * plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+  7. Open the Gemfile and update the following:
+
+    * comment out gem "minima", "~> 4.0.0"
+    * update the jekyll_plugins with the following:
+      - "jekyll-sitemap"
+      - "jekyll-seo-tag"
+      - "jekyll-paginate"
+
+  8. Create a _data folder in the project's root folder
+
+  9. Create a settings.yml inside the _data folder
+
+  10. Create a _includes folder, it will contain HTML snippets of code like the navbar and the head of the HTML document.
+
+  11. Create a _layout folder, contains HTML layout that will be applied to the pages and the posts when the site is created.
+
+  12. Create a _sass folder, and inside create a main.scss file
+
+  13. Create a assets folder, it will contain an images and a css folder
+
+  14. Navigate to the css folder and create a styles.scss file
+
+  15. Create a pages folder and inside create the following files:
+    - about.md
+    - blog.html
+    - contact.html
+    - feed.xml
+    - resume.html
+    
+
+
+  * Muse site: http://demo.lion-coders.com/html/alpha/index-gradient.html
+
+  

@@ -3,4 +3,122 @@ layout: default
 title: Resume
 ---
 
-<p>Resume</p>
+<hr>
+
+<div id="res-header">
+  <h1>Adrian Robles F</h1>
+  <button id="down-btn" class="btn"><a id="resume" href="../assets/files/resume_adrian_robles.pdf" target="_blank"><i class="fa fa-download"></i> Download</a></button>
+
+  <h4>Commercial Support & Migration Specialist</h4>
+
+  <a id="home" href="https://adrian-robles.github.io/" target="_blank">adrian-robles.github.io</a>
+
+
+</div>
+
+
+<div id="res-body" class="d-flex">
+  <div id="chrono" class="p-3 pt-5">
+
+    <h5 class="mb-3">Work History</h5>
+
+    <h6>Commercial & Consumer Team Leader</h6>
+    <p>Tek-Experts | 2020 - Present<p>
+    <ul>
+      <li>Support two teams for a total of 24 support specialists.</li>
+      <li>Lead personal interviews to locate new collaborators.</li>
+      <li>Main link between the client and the support specialists.</li>
+      <li>Define training needs and improvement areas with training team and tech lead.</li>
+      <li>Lead collaboration meetings among departments.</li>
+      <li>Participate in 1on1s and off-schedule coaching sessions</li>
+    </ul>
+
+    <h6>Post Sales Coordinator</h6>
+    <p>Tek-Experts | 2019 - 2020</p>
+    <ul>
+      <li>Support Commercial Executives in post-sales activities.</li>
+      <li>Investigate and document escalations to generate tailored solutions.</li>
+      <li>Maintain interdepartmental communication to ensure case resolution.</li>
+      <li>Track and report account documentation needs.</li>
+      <li>Organize team for documentation related projects.</li>
+    </ul>
+
+    <h6>Sr Customer Service & Migration Specialist</h6>
+    <p>Lonza | 2018 - 2019</p>
+    <ul>
+      <li>Migrated and documented processes to develop training material.</li>
+      <li>Tracked and updated processes for improvement.</li>
+      <li>Provided coaching to agents for product support.</li>
+      <li>Resolved escalations working with other departments.</li>
+      <li>Supported team leader in management tasks.</li>
+    </ul>
+
+    <h6>Sr Customer Service Specialist</h6>
+    <p>Auxis CR | 2014 - 2018</p>
+
+    <ul>
+      <li>Migrated processes new to the account and prepared SOPs for client approval.</li>
+      <li>Provided training to new agents.</li>
+      <li>Provided technical assistance and basic troubleshooting to customers via phone.</li>
+      <li>Organized interdepartmental meetings to ensure stock and SLA.</li>
+      <li>Processed and reviewed RMA requests.</li>
+    </ul>
+
+    <h5 class="mb-3">Education</h5>
+
+    <h6>FreeCodeCamp</h6>
+    <p>Responsive Web Design | 2019</p>
+
+    <h6>Liceo Pacifico Sur</h6>
+    <p>High School Diploma | 2000 - 2004</p>
+
+  </div>
+
+  <div id="pers" class="p-5 d-flex flex-column justify-content-between">
+    <div>
+      <h5>Personal Profile</h5>
+      <p>
+        I am a fast-paced learner, always looking to succeed in the task at hand and compiling new skills for future
+        projects. I love helping people and sharing the knowledge I gain with others to become a successful team.
+      </p>
+      <p>
+        Proactive and self-motivated, always having a clear target and working to set and accomplish new goals.
+      </p>
+    </div>
+
+    <div>
+      <h5>Contact Details</h5>
+      <p class="m-0">San Pedro, San Jose, Costa Rica</p>
+      <p class="m-0">codingadrian@gmail.com</p>
+      <p>Phone No.: +506-6038-4056</p>
+    </div>
+
+    <div>
+      <h5>Notable Skills</h5>
+      <ul>
+        <li>M365</li>
+        <li>SAP</li>
+        <li>HTML5 & CSS3</li>
+        <li>Git</li>
+        <li>Command Line</li>
+        <li>Ubuntu</li>
+        <li>Jekyll</li>
+        <li>Visual Studio Code</li>
+        <li>GitHub</li>
+        <li>MSFT Volume Licensing</li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Social Media</h5>
+      <div class="mx-3 d-flex justify-content-center">
+        {% for item in site.data.settings.social %}
+        <a id="social-icons" href="{{ item.link }}" target="_blank"><i class="{{ item.icon }} mr-5"
+            aria-hidden="true"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</div>
+<hr>

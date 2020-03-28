@@ -3,29 +3,22 @@ layout: default
 title: Adrian Robles
 ---
 
-	<h1>Hi there, I'm Adrian Robles!</h1>
-	<hr>
-
-	<h2>Technologies & Tools</h2>
-	<hr>
-
-	<div class="icon-container">
-		
+<div id="intro-container" class="d-flex">
+	<div id="intro">
+		<h2>Hi there,</h2>
+		<h1>I'm Adrian Robles!</h1>
+	
+	<p class="mt-5 mb-5">
+		I am motivated and committed, reliable and driven,
+		adaptable and relatable, results-oriented,
+		self-learner and inquisitive.
+	</p>
+	<p>
+		Let's talk!
+	</p>
 	</div>
-
-	<ul>
-		{% for item in site.data.settings.technologies %}
-		<li class="tech-item">
-			<img src="{{ site.github.url }}/{{ item.folder }}/{{ item.file }}" alt="">
-			<p>{{ item.name }}</p>
-		</li>
-		{% endfor %}	
-	</ul>
-
-	<h2>I have collaborated with these companies</h2>
-	IBM
-	Convergys
-	Auxis
-	Lonza
-	Tek-Experts
-	<hr>
+	
+	<div id="pic">
+		img
+	</div>
+</div>
