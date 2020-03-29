@@ -2,9 +2,9 @@
   <!-- page title -->
   <title>
     {% if page.title == "Adrian Robles" %}
-      {{ site.title }} | {{ site.description }}
+    {{ site.title }} | {{ site.description }}
     {% else %}
-      {{ page.title }} | {{ site.title }}
+    {{ page.title }} | {{ site.title }}
     {% endif %}
   </title>
 
@@ -14,6 +14,25 @@
   <!-- meta tags -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+  <meta property="og:site_name" content="Adrian Robles">
+  <meta property="article:published_time" content="{{ page.date }}" />
+  <meta property="og:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description"
+    content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:creator" content="@aroblesfuentes">
+  <meta name="twitter:card" content="summary">
 
   <!-- link to main stylesheet -->
   <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
@@ -25,7 +44,8 @@
   <script src="https://kit.fontawesome.com/4c69080d66.js" crossorigin="anonymous"></script>
 
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <!-- Google Analytics -->

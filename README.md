@@ -10,7 +10,7 @@
   
   * [ ] Search bar *in the future
 
-  * [ ] Post Sharing
+  * [X] Post Sharing
 
   * [X] Categories
 
@@ -36,7 +36,7 @@
 
   3. [ ] Get Google Analytics account
 
-  4. [ ] Create a logo
+  4. [X] Create a logo
 
   ## tools
 
@@ -74,6 +74,12 @@
   * Mailchimp
 
   * Disqus
+
+  * Open Graph
+   - -https://ogp.me/
+
+  * Twitter Cards
+   - -https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
 
   ## Gmail account
   jekyllBlog@outlook.com
