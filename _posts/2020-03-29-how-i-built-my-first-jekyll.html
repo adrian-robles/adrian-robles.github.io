@@ -1,0 +1,222 @@
+---
+layout: post
+title: "How I built my first jekyll website!"
+date: 2020-03-27 00:00:00 -0600
+last_modified_at: 2020-03-27 00:00:00 -0600
+categories: [jekyll, blogging]
+---
+
+<p>
+  It was not my first one, I have screwed up 5 or 6 before I finished this one.
+</p>
+
+<p>
+  I have been learning web development for a few months now, but I had not build anything, one big obstacle was that I
+  wanted it to be deployed and that others could visit it.
+</p>
+
+<p>
+  I started because I wanted three things:
+</p>
+
+<ul>
+  <li>A bilingual web dictionary for the Boruca language.</li>
+  <li>A resume website that I could display to my employers.</li>
+  <li>A blog, a place to write my self-learning guides.</li>
+</ul>
+
+<p>
+  While I was starting and reading about hosting my own site, I discovered <a href="https://jekyllrb.com/">Jekyll</a>, I
+  already had <a href="https://github.com/">GitHub</a>, and when I realized I could join the two and create a blog,
+  actually I could have my three wishes.
+</p>
+
+<h2>So, What is Jekyll?</h2>
+<hr>
+<p>
+  In a few words, is a program that takes markup language (HTML5 & Markdown) and uses "layouts" to create a website.
+</p>
+
+<p>
+  So, this is what makes blogging with Jekyll and GitHub Pages so easy, if you know or learn <a
+    href="https://www.markdownguide.org/getting-started/">Markdown</a> (which takes 10 minutes) you can begin creating
+  content in no time.
+</p>
+
+<p>
+  You do need to install a Ruby development environment and then Jekyll, but not much to it than to type the commands,
+  you can check the guide here: <a href="https://jekyllrb.com/docs/">Jekyll Installation</a>. Anyway, don't concern too
+  much, by when you finish this guide you'll understand Jekyll's role here.
+</p>
+
+<hr>
+<blockquote>
+  I will stop here to say this: "Develop your technical sophistication!".
+</blockquote>
+<hr>
+
+<h2>What I knew before Jekyll</h2>
+<hr>
+
+<p>
+  I had studied HTML5 and CSS3, just the basics, maybe did a couple of example websites, but I am not expert. I also
+  found Bootstrap, and that made website building a lot easier. I knew a few lines of Git, so I knew how to "commit" my
+  work to GitHub. I am also playing a bit with JavaScript, but so far nothing fancy, I do use it in the Boruca
+  Dictionary I made.
+</p>
+
+<p>
+  I think that if you study HTML, CSS and Bootstrap for a week, you can start blogging on the weekend. But to make that
+  easier, I am sharing this guide with you.
+</p>
+
+<h2>GitHub</h2>
+<hr>
+
+<p>
+  If you are reading this, you most likely already have an email account; so, use it to get a <a
+    href="https://github.com/">GitHub</a> account. We'll use GitHub to store our website files, also known as "host our
+  website" for free, yes, FREE. GitHub is also where we'll get the website domain name: github.io. Also for FREE.
+</p>
+
+<p>
+  Again, don't worry too much here, just sign up.
+</p>
+
+<h2>jekyll new myblog</h2>
+<hr>
+
+<p>
+  Open the Terminal and navigate to where you wish to store the project by typing <code>$ cd Documents/</code>
+</p>
+
+<img class="blog-img" src="/assets/blog-assets/how-i-built-my-first-jekyll-website/nav-doc-folder.png"
+  alt="Terminal - Change Folder">
+
+
+<p>
+  To create the project folder, type: <code>$ jekyll new blogname</code>; where <code>blogname</code> is whatever you
+  wish to name you blog.
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/jekyll-new-blogname.png" alt="" class="blog-img">
+
+<p>
+  You'll get a confirmation saying: <code>New jekyll site installed in ...</code>
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/blog-created.png" alt="Confirmation screen"
+  class="blog-img">
+
+<p>
+  Now navigate to your blog folder, <code>$ cd blogname</code>.
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/nav-blog-folder.png" alt="Navigate to blog folder"
+  class="blog-img">
+
+<p>
+  You can now take a look and see the initial folders and files for your blog, type <code>ls</code>
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/ls-blog-folder.png" alt="List blog files and folders"
+  class="blog-img">
+
+
+<p>
+  Now it's time to see you blog on the browser, type <code>bundle exec jekyll serve</code>
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/serve-blog.png" alt="Serve the blog" class="blog-img">
+
+<p>
+  Go to your browser and type <code>http://127.0.0.1:4000</code>
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/browser-blog.png" alt="Blog is live" class="blog-img">
+
+<p>This is the template of a Jekyll Blog, now you can customize it and start creating content. Customization is up to
+  how you want it to look, but I will at least show you the basics.</p>
+
+<h2>Add your own touch</h2>
+<hr>
+
+<p>
+  Here we are going to be using <a href="">Visual Studio Code</a> to modify our blog files, you are going to be writing
+  code now.
+</p>
+
+<p>
+  Open the project folder in Visual Studio Code, you can see the initial file structure:
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/jekyll-init-files.png"
+  alt="Jekyll Initial File Structure" class="blog-img">
+
+<p>
+  Let me quickly explain what these are, if you want to dig deeper into these, please read the Jekyll Documentation:
+</p>
+
+<ul>
+  <li>Disregard any file or folder that begins with a "<b>.</b>".</li>
+  <li>"<b>_posts</b>" is where you will be writing your blog content, this contains all of you blog posts.</li>
+  <li>Ignore the "<b>_site</b>" folder, but know that this is where your website is generated.</li>
+  <li>"<b>_config.yml</b>" contains your site's more important settings</li>
+  <li>"<b>Gemfile</b>" is like a plugging library, component you need for your blog to do certain things.</li>
+  <li>The "<b>404.html</b>", you don't need to touch right now, but I will make a guide on designing a 404 page.</li>
+  <li>The "<b>about</b>" and "<b>index</b>" files, this is where you content displays in the website.</li>
+</ul>
+
+<p>
+  Now, open the "<b>_config.yml</b>" file and update the fields, if you do not know what something is, don't touch, it'll work just fine.
+</p>
+
+<img src="/assets/blog-assets/how-i-built-my-first-jekyll-website/config-yml.png" alt="Site Settings" class="blog-img">
+
+
+
+**build settings**
+
+* markdown: kramdown
+* highlighter: rouge
+* permalink: /blog/:year/:month/:day/:title
+* paginate: (select a number)
+* sass:
+sass_dir: _sass
+style: compressed
+* comment out theme: minima
+* plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+7. Open the Gemfile and update the following:
+
+* comment out gem "minima", "~> 4.0.0"
+* update the jekyll_plugins with the following:
+- "jekyll-sitemap"
+- "jekyll-seo-tag"
+- "jekyll-paginate"
+
+8. Create a _data folder in the project's root folder
+
+9. Create a settings.yml inside the _data folder
+
+10. Create a _includes folder, it will contain HTML snippets of code like the navbar and the head of the HTML document.
+
+11. Create a _layout folder, contains HTML layout that will be applied to the pages and the posts when the site is
+created.
+
+12. Create a _sass folder, and inside create a main.scss file
+
+13. Create a assets folder, it will contain an images and a css folder
+
+14. Navigate to the css folder and create a styles.scss file
+
+15. Create a pages folder and inside create the following files:
+- about.md
+- blog.html
+- contact.html
+- feed.xml
+- resume.html
+
+
+
+* Muse site: http://demo.lion-coders.com/html/alpha/index-gradient.html

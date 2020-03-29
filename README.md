@@ -4,21 +4,15 @@
 
 ## what I wanted my website/blog to have
 
-  * [ ] 100% compatible with GitHub
+  * [X] 100% compatible with GitHub
 
   * [ ] work on the gh-pages branch
   
-  * [ ] Ajax search with instant results
-
-  * [ ] 3 Featured posts on home page
-
-  * [ ] Pagination
+  * [ ] Search bar *in the future
 
   * [ ] Post Sharing
 
-  * [ ] Categories
-
-  * [ ] Prev/Next links
+  * [X] Categories
 
   * [ ] Disqus comments
 
@@ -151,7 +145,7 @@
 
   12. Create a _sass folder, and inside create a main.scss file
 
-  13. Create a assets folder, it will contain an images and a css folder
+  13. Create a assets folder, it will contain an images and a css folders
 
   14. Navigate to the css folder and create a styles.scss file
 
@@ -161,8 +155,10 @@
     - contact.html
     - feed.xml
     - resume.html
-    
+  
+  16. Start adding content and style to the website.
 
+  17. Push changes to GitHub and live site.
 
   * Muse site: http://demo.lion-coders.com/html/alpha/index-gradient.html
 

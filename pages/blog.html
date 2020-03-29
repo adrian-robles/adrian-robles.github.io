@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 	<div class="blog-header p-3 mb-5">
-		<p>Welcome to my blog, here I post the guides I make when I learn how to do something, these help me trace back my steps and I come back to them when I doing a similar project. Hopefully, you'll find them useful too!</p>
+		<p>Welcome to my blog, here I post the guides I make when I learn how to do something, these help me trace back my steps and I come back to them when I am doing a similar project. Hopefully, you'll find them useful too!</p>
 	</div>
 
 
@@ -11,8 +11,7 @@ title: Blog
 			{% for post in site.posts %}
 			<li class="rounded shadow-sm">
 				<a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-				<span class="post-date">{{ post.date | date_to_string }}</span>
-				{{ post.content | strip_html | truncatewords: 50 }}
+				{{ post.excerpt }}
 			</li>
 			{% endfor %}
 	</ul>

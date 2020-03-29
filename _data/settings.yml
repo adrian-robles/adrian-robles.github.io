@@ -7,20 +7,10 @@
 #google-ID: ''
 
 menu:
-#- {name: 'About', folder: 'pages', file: 'about.html'}
 - {name: 'Blog', folder: 'pages', file: 'blog.html'}
 - {name: 'Resume', folder: 'pages', file: 'resume.html'}
 #- {name: 'Contact', folder: 'pages', file: 'contact.html'}
 
-#technologies:
-#- {name: 'MS Office', folder: 'assets/images/', file: 'msoffice-logo.png'}
-#- {name: 'Ubuntu', folder: 'assets/images/', file: 'ubuntu-logo.png'}
-#- {name: 'HTML5', folder: 'assets/images/', file: 'html5-logo.png'}
-#- {name: 'CSS3', folder: 'assets/images/', file: 'css3-logo.png'}
-#- {name: 'Git', folder: 'assets/images/', file: 'git-logo.png'}
-#- {name: 'GitHub', folder: 'assets/images/', file: 'github-logo.png'}
-#- {name: 'Bootstrap4', folder: 'assets/images/', file: 'bootstrap-logo.jpeg'}
-#- {name: 'Jekyll', folder: 'assets/images/', file: 'jekyll-logo.jpeg'}
 
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
@@ -32,13 +22,3 @@ social:
 #- {icon: 'fas fa-rss', link: 'feed.xml'}
 # - {icon: 'rss-square', link: 'rss-feed.xml'}
 
-# Customize site text
-pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
-
-sharing_button_prompt: 'Feel free to share!'
-
-related_posts: 'You may also enjoy...'
-
-post_date_prefix: 'Written on'

@@ -4,6 +4,22 @@ body {
   width: 80%;
 }
 
+body a {
+  color: $black-shade1 !important;
+  text-decoration: underline;
+}
+
+body a:hover {
+  color: $black-shade4 !important;
+}
+
+blockquote {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.3em;
+  color: $black-shade4;
+}
+
 /* navbar */
 /* logo */
 #ar-logo {
@@ -59,7 +75,6 @@ a.nav-link:hover {
 
 /* blog page content */
 .blog-header {
-  background-color: $black-shade1;
   color: $black-shade4;
   font-family: "Ubuntu", "sans-serif";
   font-weight: 700;
@@ -90,6 +105,45 @@ ul.posts li {
 
 }
 
+/* blog post content */
+
+
+.post-categories {
+  float: right;
+  padding-left: 8px;
+  border-left: 2px solid $black-shade2;
+}
+
+#blog-post {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 2em;
+  text-align: justify;
+}
+
+.blog-img {
+  display: flex;
+  align-self: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* share bar */
+.share-box {
+  width: 75%;
+  margin: 25px auto;
+  text-align: right;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.share-icons a {
+  text-align: right;
+  display: block;
+  margin: 0 8px 0 8px;
+}
 
 /* resume page */
 #res-header {
@@ -104,26 +158,12 @@ ul.posts li {
   float: right;
 }
 
-#resume {
-  color: $black-shade1 !important;
+#down-btn a {
+  text-decoration: none;
 }
-
-#resume:hover {
-  color: $black-shade4 !important;
-}
-
 
 #res-header h4 {
   margin: 15px 0;
-}
-
-#home {
-  color: $black-shade1 !important;
-  text-decoration: underline;
-}
-
-#home:hover {
-  color: $black-shade4 !important;
 }
 
 #chrono {
@@ -163,28 +203,12 @@ ul.posts li {
   font-size: .85em;
 }
 
-#social-icons {
-  color: $brand-color;
-}
-
-#social-icons:hover {
-  color: $black-shade4 !important;
-}
-
 /* footer */
 .page-footer {
   font-size: .8rem;
   line-height: 1.2;
   color: $black-shade1;
   background-color: $white-color;
-}
-
-.page-footer a {
-  color: $black-shade2;
-}
-
-.page-footer a:hover {
-  color: $black-shade4;
 }
 
 .footer-copyright {
