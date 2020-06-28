@@ -26,7 +26,7 @@
 
   * [X] SASS Support
 
-  * [ ] Google Analytics
+  * [X] Google Analytics
 
   * [X] SEO Optimized
     - SEO Check up tool
@@ -38,7 +38,7 @@
 
   2. [ ] Create Mailchimp
 
-  3. [ ] Get Google Analytics account
+  3. [X] Get Google Analytics account
 
   4. [X] Create a logo
 
