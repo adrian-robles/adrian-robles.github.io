@@ -16,7 +16,7 @@
 
   * [X] Responsiveness
 
-  * [ ] Disqus comments
+  * [X] Disqus comments
 
   * [ ] Mailchimp integration
 
@@ -34,11 +34,14 @@
 
   ## todo's before I started
 
-  1. [ ] Create Disqus account
+  1. [X] Create Disqus account
+    - codingadrian@gmail.com
 
   2. [ ] Create Mailchimp
+    - codingadrian@gmail.com
 
   3. [X] Get Google Analytics account
+      - codingadrian@gmail.com
 
   4. [X] Create a logo
 
