@@ -7,17 +7,13 @@ title: Resume
 
 <div id="res-header">
   <h1>Adrian Robles F</h1>
-  <button id="down-btn" class="btn"><a id="resume" href="../assets/files/resume_adrian_robles.pdf" target="_blank"><i class="fa fa-download"></i> Download</a></button>
-
   <h4>Commercial Support & Migration Specialist</h4>
-
   <a id="home" href="https://adrian-robles.github.io/" target="_blank">adrian-robles.github.io</a>
-
-
+  <button id="down-btn" class="btn float-right"><a id="resume" href="../assets/files/resume_adrian_robles.pdf" target="_blank"><i class="fa fa-download"></i> Download</a></button>
 </div>
 
 
-<div id="res-body" class="d-flex">
+<div id="res-body">
   <div id="chrono" class="p-3 pt-5">
 
     <h5 class="mb-3">Work History</h5>
@@ -75,7 +71,7 @@ title: Resume
   </div>
 
   <div id="pers" class="p-5 d-flex flex-column justify-content-between">
-    <div>
+    <div class="text-justify">
       <h5>Personal Profile</h5>
       <p>
         I am a fast-paced learner, always looking to succeed in the task at hand and compiling new skills for future
@@ -88,7 +84,7 @@ title: Resume
 
     <div>
       <h5>Contact Details</h5>
-      <p class="m-0">San Pedro, San Jose, Costa Rica</p>
+      <!--<p class="m-0">San Pedro, San Jose, Costa Rica</p>-->
       <p class="m-0">codingadrian@gmail.com</p>
       <p>Phone No.: +506-6038-4056</p>
     </div>
@@ -111,7 +107,7 @@ title: Resume
 
     <div>
       <h5>Social Media</h5>
-      <div class="mx-3 d-flex justify-content-center">
+      <div id="res-social-media" class="mx-3 d-flex justify-content-center">
         {% for item in site.data.settings.social %}
         <a id="social-icons" href="{{ item.link }}" target="_blank"><i class="{{ item.icon }} mr-5"
             aria-hidden="true"></i></a>

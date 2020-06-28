@@ -6,13 +6,15 @@
 
   * [X] 100% compatible with GitHub
 
-  * [ ] work on the gh-pages branch
+  * [ ] Work on the gh-pages branch
   
   * [ ] Search bar *in the future
 
   * [X] Post Sharing
 
   * [X] Categories
+
+  * [X] Responsiveness
 
   * [ ] Disqus comments
 
@@ -26,7 +28,9 @@
 
   * [ ] Google Analytics
 
-  * [ ] SEO Optimized
+  * [X] SEO Optimized
+    - SEO Check up tool
+      https://toolbox.seositecheckup.com/users
 
   ## todo's before I started
 
@@ -69,17 +73,17 @@
   * Jekyll
 
   * SEO
-    - -https://blog.webjeda.com/optimize-jekyll-seo/
+    - https://blog.webjeda.com/optimize-jekyll-seo/
 
   * Mailchimp
 
   * Disqus
 
   * Open Graph
-   - -https://ogp.me/
+   - https://ogp.me/
 
   * Twitter Cards
-   - -https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+   - https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
 
   ## Gmail account
   jekyllBlog@outlook.com

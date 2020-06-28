@@ -1,86 +1,42 @@
 
-/* global */
+/* global styles*/
 body {
-  width: 80%;
-}
-
-body a {
+  width: 90vw;
   color: $black-shade1 !important;
-  text-decoration: underline;
 }
 
-body a:hover {
-  color: $black-shade4 !important;
+a {
+  color: $black-shade1 !important;
+  text-decoration: underline !important;
 }
 
-blockquote {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.3em;
-  color: $black-shade4;
+a:hover {
+  color: $black-shade4 !important
 }
 
 /* navbar */
 /* logo */
+
 #ar-logo {
-  width: 60px;
   height: auto;
+  width: 60px;
 }
-
-/* navbar links */
-
-a.nav-link {
-  color: $black-shade1 !important;
-}
-
-a.nav-link:hover {
-  color: $black-shade4 !important;
-}
-
-/* search bar */
-#search-input {
-  color: $black-shade1 !important;
-}
-
-#search {
-  color: $black-shade1 !important;
-  border-color: $black-shade1 !important;
-}
-
-#search:hover {
-  color: $black-shade4 !important;
-  border-color: $black-shade1;
-  background-color: $black-shade2;
-}
-
-
 
 /* content */
 .content-container {
-  width: 95%;
   position: relative;
   bottom: 10vh;
-  color: $black-shade1 !important;
 }
-
-/* home page */
-#intro {
-  width: 49%;
-}
-
-#pic {
-  width: 49%;
-}
-
 
 /* blog page content */
 .blog-header {
   color: $black-shade4;
   font-family: "Ubuntu", "sans-serif";
   font-weight: 700;
-  letter-spacing: .13em;
-  line-height: 1.8;
-  font-size: 1.3em;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+  font-size: .9rem;
+  text-align: justify;
 }
 
 ul.posts {
@@ -89,118 +45,51 @@ ul.posts {
 
 ul.posts li {
   list-style: none;
-  padding: 25px;
-  margin-bottom: 12px;
 }
 
-.post-title {
-  font-size: 1.5em;
-  color: $brand-color;
+/* blog post */
+
+.post-data {
+  line-height: 1rem;
+  padding-bottom: 0;
 }
 
-.post-date {
-  font-size: .9em;
-  color: $black-shade3;
-  font-weight: lighter;
-
+.post-data p{
+  margin-bottom: 0;
 }
 
-/* blog post content */
-
-
-.post-categories {
-  float: right;
-  padding-left: 8px;
-  border-left: 2px solid $black-shade2;
-}
-
-#blog-post {
-  width: 75%;
-  margin: 0 auto;
-  line-height: 2em;
-  text-align: justify;
+#blog-post ul {
+  padding-inline-start: 1rem;
 }
 
 .blog-img {
   display: flex;
   align-self: center;
-  margin-bottom: 15px;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
-/* share bar */
-.share-box {
-  width: 75%;
-  margin: 25px auto;
-  text-align: right;
-}
+/* share box */
 
-.share-icons {
-  display: flex;
-  justify-content: flex-end;
-}
 .share-icons a {
-  text-align: right;
-  display: block;
-  margin: 0 8px 0 8px;
+  margin: .6rem;
 }
 
-/* resume page */
-#res-header {
-  padding: 40px 0 30px 20px;
-}
-
-#res-header h1 {
-  display: inline;
-}
+/* resume */
 
 #down-btn {
-  float: right;
+  padding: 0;
 }
 
 #down-btn a {
-  text-decoration: none;
-}
-
-#res-header h4 {
-  margin: 15px 0;
-}
-
-#chrono {
-  width: 60%;
+  text-decoration: none !important;
 }
 #chrono h6 {
-  font-size: .9em;
   font-weight: bold;
-}
-
-#chrono p {
-  font-size: .88em;
 }
 
 #chrono ul {
-  padding-left: 20px;
-  font-size: .88em;
-  margin-bottom: 20;
-}
-
-#pers {
-  width: 40%;
-  text-align: justify;
-}
-
-#pers h5 {
-  font-size: .9em;
-  font-weight: bold;
-}
-
-#pers p {
-  font-size: .85em;
-}
-#pers ul {
-  list-style: none;
-  padding: 0;
-  font-size: .85em;
+  padding-inline-start: 1rem;
 }
 
 /* footer */
@@ -214,5 +103,102 @@ ul.posts li {
 .footer-copyright {
   width: 75%;
 }
+
+
+
+/* responsiveness
+small
+375 x 667
+
+medium
+768 x 1024    pending
+
+large
+
+1200 x 1600   pending
+*/
+
+
+/////////* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    width: 80vw;
+  }
+
+  /* content */
+  .content-container {
+    position: relative;
+    bottom: 5vh;
+  }
+
+  /* resume */
+  #res-body {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+  }
+
+  #chrono {
+    width: 70%;
+  }
+
+  #pers {
+    width: 30%;
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+  }
+
+  #res-social-media {
+    flex-direction: column;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+
+
+}
+
+
+
+
+/////////* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  body {
+    width: 70vw !important;
+  }
+
+  /* content */
+  .content-container {
+    position: relative;
+    bottom: 2vh;
+    padding-bottom: 1.2vh;
+  }
+   /* resume */
+   #res-body {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+  }
+
+  #chrono {
+    width: 70%;
+  }
+
+  #pers {
+    width: 30%;
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+  }
+
+  #res-social-media {
+    flex-direction: row;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  
+}
+
 
 

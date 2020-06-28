@@ -2,26 +2,26 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }}</p>
-
-<hr>
+<div class=" post-data d-flex justify-content-between">
+  <p>{{ page.date | date_to_string }}</p>
 <div class="post-categories">
   {% if post %}
-    {% assign categories = post.categories %}
+  {% assign categories = post.categories %}
   {% else %}
-    {% assign categories = page.categories %}
+  {% assign categories = page.categories %}
   {% endif %}
   {% for category in categories %}
   <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
 </div>
-
-
-<div id="blog-post">
-  {{ content }} 
 </div>
+<hr>
+<div id="blog-post" class="mb-5">
 
-{% include  share.html %}
+  {% include  share.html %}
 
+
+  {{ content }}
+</div>
 
