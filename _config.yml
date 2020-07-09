@@ -30,7 +30,11 @@ twitter_username: aroblesfuentes
 github_username:  adriancodes
 linkedin_username: aroblesfuentes
 logo: /images/ar-solid-inver-logo.png
+
+#establish default language as English US
 lang: en_US
+#establishes an array of possible languages
+languages: ["en_US", "es_CR"]
 
 
 # Build settings

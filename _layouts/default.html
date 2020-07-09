@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en-US">
+
+<html lang="{{ page.lang }}"></html>
 
 {% include head.html %}
 
@@ -9,6 +10,22 @@
 	<div>
 
 		{% include header.html %}
+		<ul>
+      {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+      {% for post in posts %}
+        <li class="langSelect">
+          <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+        </li>
+      {% endfor %}
+      
+      {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+      {% for page in pages %}
+        <li class="langSelect">
+          <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+		
 
 
 		<div class="pt-5 mx-auto content-container">

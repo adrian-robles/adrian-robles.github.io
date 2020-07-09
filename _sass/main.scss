@@ -22,6 +22,15 @@ a:hover {
   width: 60px;
 }
 
+/* language selector*/
+.langSelect {
+  list-style: none;
+}
+
+.en:lang(en), .es:lang(es) {
+  font-weight: bold;
+}
+
 /* content */
 .content-container {
   position: relative;
@@ -37,6 +46,14 @@ a:hover {
   line-height: 1.2rem;
   font-size: .9rem;
   text-align: justify;
+}
+
+blockquote {
+  width: 70%;
+  margin: 35px auto !important;
+  border-left: 2px solid black;
+  padding-left: 10px;
+  font-style: italic;
 }
 
 
