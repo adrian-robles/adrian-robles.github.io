@@ -24,12 +24,11 @@ a:hover {
 
 /* language selector*/
 
-ul.langs {
-  list-style-type: none;
+
   .langSelect {
 		display: inline-block;
     height: 1.5em;
-    list-style: none;
+    list-style-type: none;
 		  a {
 			  padding: 0 5px;
 			  line-height: 1.7em;
@@ -41,7 +40,6 @@ ul.langs {
 			}
 		}
   }
-}
 
 
 

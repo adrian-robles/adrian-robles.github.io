@@ -36,7 +36,7 @@
     
   </nav>
 <div class="pb-4">
-  <ul class=" langs d-flex flex-row-reverse">
+  <ul class="d-flex flex-row-reverse">
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
     {% for post in posts %}
       <li class="langSelect pl-2">
