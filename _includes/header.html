@@ -47,7 +47,7 @@
     {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
     {% for page in pages %}
       <li class="langSelect pl-2">
-        <a href="{{ page.url }}" class=".{{ page.lang }}">{{ site.data.settings.languages['langOption'][page.lang] }}</a>
+        <a href="{{ page.url }}" class="{{ page.lang }}">{{ site.data.settings.languages['langOption'][page.lang] }}</a>
       </li>
     {% endfor %}
     </ul>
