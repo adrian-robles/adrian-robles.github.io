@@ -37,7 +37,7 @@ ul.langs {
 			  text-transform: lowercase;
 			    & .en-US, & .es-CR {
 				    font-weight: 700;
-				    text-transform: uppercase; 
+				    text-transform: uppercase !important; 
 			}
 		}
   }
