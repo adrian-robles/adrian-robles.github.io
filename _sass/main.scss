@@ -27,7 +27,7 @@ a:hover {
   list-style: none;
    a {
     text-transform: lowercase;
-    &.en-US, &.es-CR {
+    &.en-US:lang(en-US), &.es-CR:lang(es-CR) {
       font-weight: 700;
       text-transform: uppercase; 
   }
