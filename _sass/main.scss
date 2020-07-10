@@ -24,14 +24,23 @@ a:hover {
 
 /* language selector*/
 .langSelect {
-  list-style: none;
-   a {
-    text-transform: lowercase;
-    &.en-US:lang(en-US), &.es-CR:lang(es-CR) {
-      font-weight: 700;
-      text-transform: uppercase; 
+
+  li {
+		display: inline-block;
+		height: 1.5em;
+
+		a {
+			padding: 0 5px;
+			line-height: 1.7em;
+			font-weight: 300;
+			text-transform: lowercase;
+
+			&.en-US:lang(en-US), &.es-CR:lang(es-CR) {
+				font-weight: 700;
+				text-transform: uppercase; 
+			}
+		}
   }
-   }
 }
 
 .en-US:lang(en-US), .es-CR:lang(es-CR) {
