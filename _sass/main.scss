@@ -24,8 +24,6 @@ a:hover {
 
 /* language selector*/
 .langSelect {
-
-  li {
 		display: inline-block;
     height: 1.5em;
     list-style: none;
@@ -40,7 +38,7 @@ a:hover {
 			}
 		}
   }
-}
+
 
 .en-US:lang(en-US), .es-CR:lang(es-CR) {
 }
