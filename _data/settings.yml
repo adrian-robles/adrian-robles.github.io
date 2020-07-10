@@ -7,22 +7,31 @@
 #google-ID: ''
 
 homepage:
-- {name: '', lang: 'en', folder: '.', file: 'index.html'}
-- {name: '', lang: 'es', folder: 'es_CR', file: 'index.html'}
+- {name: '', lang: 'en-US', folder: '.', file: 'index.html'}
+- {name: '', lang: 'es-CR', folder: 'es_CR', file: 'index.html'}
 
 menu:
-- {name: 'Blog', lang: 'en', folder: 'pages', file: 'blog.html'}
-- {name: 'Resume', lang: 'en', folder: 'pages', file: 'resume.html'}
-- {name: 'Contact', lang: 'en', folder: 'pages', file: 'contact.html'}
-- {name: 'Blog', lang: 'es', folder: 'es_CR/pages', file: 'blog.html'}
-- {name: 'Resume', lang: 'es', folder: 'es_CR/pages', file: 'resume.html'}
-- {name: 'Contacto', lang: 'es', folder: 'es_CR/pages', file: 'contact.html'}
+- {name: 'Blog', lang: 'en-US', folder: 'pages', file: 'blog.html'}
+- {name: 'Resume', lang: 'en-US', folder: 'pages', file: 'resume.html'}
+- {name: 'Contact', lang: 'en-US', folder: 'pages', file: 'contact.html'}
+- {name: 'Blog', lang: 'es-CR', folder: 'es_CR/pages', file: 'blog.html'}
+- {name: 'Resume', lang: 'es-CR', folder: 'es_CR/pages', file: 'resume.html'}
+- {name: 'Contacto', lang: 'es-CR', folder: 'es_CR/pages', file: 'contact.html'}
+
+
+# language inventory
+
+languages:
+  langOption:
+    en-US: "en"
+    es-CR: "es"
+
 
 # Footer Translation
 f:
   footer-article:
-    en: "A personal presentation, a portfolio and where I store my self-learning guides."
-    es: "Una presentacion personal, un portafolio y donde guardo mis guias autodidacticas."
+    en-US: "A personal presentation, a portfolio and where I store my self-learning guides."
+    es-CR: "Una presentacion personal, un portafolio y donde guardo mis guias autodidacticas."
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:

@@ -27,8 +27,12 @@ a:hover {
   list-style: none;
 }
 
-.en:lang(en), .es:lang(es) {
-  font-weight: bold;
+.en-US:lang(en-US), .es-CR:lang(es-CR) {
+  text-transform: lowercase;
+    &.en-US, &.es-CR {
+      font-weight: 700;
+      text-transform: uppercase; 
+  }
 }
 
 /* content */
