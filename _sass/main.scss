@@ -25,14 +25,16 @@ a:hover {
 /* language selector*/
 .langSelect {
   list-style: none;
-}
-
-.en-US:lang(en-US), .es-CR:lang(es-CR) {
-  text-transform: lowercase;
+   a {
+    text-transform: lowercase;
     &.en-US, &.es-CR {
       font-weight: 700;
       text-transform: uppercase; 
   }
+   }
+}
+
+.en-US:lang(en-US), .es-CR:lang(es-CR) {
 }
 
 /* content */
