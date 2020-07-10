@@ -34,9 +34,9 @@ a:hover {
 			  line-height: 1.7em;
 			  font-weight: 300;
 			  text-transform: lowercase;
-			    & a.en-US, & a.es-CR {
+			    &.en-US, &.es-CR {
 				    font-weight: 700;
-				    text-transform: uppercase !important; 
+				    text-transform: uppercase; 
 			}
 		}
   }
