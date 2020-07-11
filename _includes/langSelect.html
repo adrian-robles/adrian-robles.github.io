@@ -1,0 +1,24 @@
+{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+
+{% if posts.size == 0 %}
+  {% assign posts=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% endif %}
+
+
+<div class="lang pb-4">
+  <ul class="d-flex flex-row-reverse">
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+    {% for post in posts %}
+      <li class="pl-2">
+        <a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }}">{{ site.data.settings.languages['langOption'][post.lang] }}</a>
+      </li>
+    {% endfor %}
+    
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+    {% for page in pages %}
+      <li class="pl-2">
+        <a href="{{ site.base-url }}{{ page.url }}" class="{{ page.lang }}">{{ site.data.settings.languages['langOption'][page.lang] }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+</div>
