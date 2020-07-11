@@ -35,18 +35,18 @@
 
     
   </nav>
-<div class="pb-4">
+<div class="lang pb-4">
   <ul class="d-flex flex-row-reverse">
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
     {% for post in posts %}
-      <li class="langSelect pl-2">
+      <li class="pl-2">
         <a href="{{ post.url }}" class="{{ post.lang }}">{{ site.data.settings.languages['langOption'][page.lang] }}</a>
       </li>
     {% endfor %}
     
     {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
     {% for page in pages %}
-      <li class="langSelect pl-2">
+      <li class="pl-2">
         <a href="{{ page.url }}" class="{{ page.lang }}">{{ site.data.settings.languages['langOption'][page.lang] }}</a>
       </li>
     {% endfor %}
