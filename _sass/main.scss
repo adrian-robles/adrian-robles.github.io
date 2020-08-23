@@ -21,7 +21,7 @@ a:hover {
 /* logo */
 
 nav {
-  font-family: $base-font-family;
+  font-family: $base-font-family !important;
 }
 
 #ar-logo {
@@ -54,7 +54,7 @@ button.navbar-toggler {
       height: 1.5em;
   
        a {
-        font-family: $base-font-family;
+        font-family: $base-font-family !important;
         padding: 0 5px;
         line-height: 1.7em;
         font-weight: 300;
@@ -79,7 +79,7 @@ button.navbar-toggler {
 /* home page */
 
 #intro {
-  font-family: $body-font-family;
+  font-family: $body-font-family !important;
 }
 
 
@@ -91,15 +91,15 @@ button.navbar-toggler {
   line-height: 1.2rem;
   font-size: .9rem;
   text-align: justify;
-  font-family: $body-font-family;
+  font-family: $body-font-family !important;
 }
 
 .card {
-  font-family: $body-font-family;
+  font-family: $body-font-family !important;
 }
 
 .card-title {
-  font-family: $base-font-family;
+  font-family: $base-font-family !important;
 }
 
 blockquote {
@@ -147,11 +147,11 @@ blockquote {
 
 /* resume */
 #res-header {
-  font-family: $base-font-family;
+  font-family: $base-font-family !important;
 }
 
 #res-body {
-  font-family: $body-font-family;
+  font-family: $body-font-family !important;
 }
 
 #pers {
@@ -174,11 +174,11 @@ blockquote {
 }
 
 #contact-info {
-  font-family: $body-font-family;
+  font-family: $body-font-family !important;
 }
 
 #contact-info h2 {
-  font-family: $base-font-family;
+  font-family: $base-font-family !important;
 }
 
 /* footer */
@@ -187,7 +187,7 @@ blockquote {
   line-height: 1.2;
   color: $black-shade1;
   background-color: $white-color;
-  font-family: $base-font-family;
+  font-family: $base-font-family !important;
 }
 
 .footer-copyright {
