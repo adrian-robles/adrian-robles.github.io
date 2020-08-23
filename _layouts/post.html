@@ -5,7 +5,7 @@ comments: true
 <h1 class="post-title">{{ page.title }}</h1>
 <div class=" post-data d-flex justify-content-between">
   <p>{{ page.date | date_to_string }}</p>
-  <div class="post-categories">
+<!--   <div class="post-categories">
     {% if post %}
     {% assign categories = post.categories %}
     {% else %}
@@ -15,30 +15,19 @@ comments: true
     <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
     {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
-  </div>
+  </div> -->
 </div>
-<hr>
+<img class="img-fluid mx-auto mb-4" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
 <div id="blog-post" class="mb-5">
 
   {% include  share.html %}
 
   {{ content }}
 
-  <hr>
+  <img class="img-fluid mx-auto mb-4" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
 
   <div class="post-categories d-flex justify-content-between">
     <p class=""><a href="https://adrian-robles.github.io/pages/blog.html">More like this...</a></p>
-    <div>
-      {% if post %}
-      {% assign categories = post.categories %}
-      {% else %}
-      {% assign categories = page.categories %}
-      {% endif %}
-      {% for category in categories %}
-      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
   </div>
 
   <!-- {% include disqus.html %} -->
