@@ -17,6 +17,12 @@ a:hover {
   color: $black-shade4 !important
 }
 
+#horbar {
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+  opacity: 0.5;
+}
+
 /* navbar */
 /* logo */
 
@@ -80,6 +86,11 @@ button.navbar-toggler {
 
 #intro {
   font-family: 'Kalam', sans-serif !important;
+}
+
+#home-pic {
+  max-width: 60vw;
+  height: auto;
 }
 
 
@@ -148,19 +159,30 @@ blockquote {
   margin-bottom: 1rem;
 }
 
-#disqus_thread {
-  font-family: 'Kalam', sans-serif !important;
-}
-
 /* share box */
 
 .share-icons a {
   margin: .6rem;
 }
 
+/* contact */
+.icon-social {
+  font-size: 1.5em;
+}
+
 /* resume */
 #res-header {
   font-family: 'Gloria Hallelujah', sans-serif !important;
+}
+
+#res-logo {
+  width: 10vw;
+  padding-bottom: 4px;
+}
+
+.down-icon {
+  width: 5vw;
+  height: auto;
 }
 
 #res-body {
@@ -232,6 +254,20 @@ large
     font-size: 1.7em;
   }
 
+  #horbar {
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    opacity: 0.5;
+    width: 1500px;
+  }
+
+  /* homepage */
+  #home-pic {
+    max-width: 25vw;
+    height: auto;
+    margin-bottom: 4vh;
+  }
+
   /* content */
   .content-container {
     position: relative;
@@ -240,6 +276,20 @@ large
   }
 
   /* resume */
+  #res-img {
+    display: inline-block;
+  }
+  #res-logo {
+    width: 9vw;
+    padding-bottom: 0;
+  }
+  
+  .down-icon {
+    width: 3vw;
+    height: auto;
+    display: inline !important;
+  }
+
   #res-body {
     display: flex;
     width: 70vw !important;
