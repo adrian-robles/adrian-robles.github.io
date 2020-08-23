@@ -119,13 +119,22 @@ blockquote {
 
 /* blog post */
 
+.post-title {
+  font-family: 'Gloria Hallelujah', sans-serif !important;
+}
+
 .post-data {
   line-height: 1rem;
   padding-bottom: 0;
+  font-family: 'Kalam', sans-serif !important;
 }
 
 .post-data p{
   margin-bottom: 0;
+}
+
+#blog-post {
+  font-family: 'Kalam', sans-serif !important;
 }
 
 #blog-post ul {
@@ -250,6 +259,11 @@ large
     text-align: center;
   }
 
+  /* footer */
+.page-footer {
+  font-size: .8rem;
+}
+
 
 
 }
@@ -298,6 +312,11 @@ large
     margin: 0 !important;
     text-align: center;
   }
+
+    /* footer */
+.page-footer {
+  font-size: .9rem;
+}
 
   
 }
