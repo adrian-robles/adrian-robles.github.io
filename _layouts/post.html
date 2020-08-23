@@ -2,10 +2,21 @@
 layout: default
 comments: true
 ---
+{% if post.categories == "project" %}
+<div class="post-icon">
+  <img src="/assets/images/adrianLogos/ppr.svg" alt="Project Icon" class="img-fluid -mx-auto">
+</div>
+{% elseif post.categories == "note" %}
+<div class="post-icon">
+  <img src="/assets/images/adrianLogos/npr.svg" alt="Project Icon" class="img-fluid -mx-auto">
+</div>
+{% endif %}
+
+
 <h1 class="post-title">{{ page.title }}</h1>
 <div class=" post-data d-flex justify-content-between">
   <p>{{ page.date | date_to_string }}</p>
-<!--   <div class="post-categories">
+  <!--   <div class="post-categories">
     {% if post %}
     {% assign categories = post.categories %}
     {% else %}
