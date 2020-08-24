@@ -3,28 +3,30 @@
     <!-- icon -->
     <div class="col-md-2">
       <img class="featured-box-img-cover p-2" src="{% if post.image contains ":/" %}{{ post.image }}
-      {% else %}
-      {{ site.baseurl }}/{{ post.image }}
-      {% endif %}">
+        {% else %}
+        {{ site.baseurl }}/{{ post.image }}
+        {% endif %}">
     </div>
 
-    <div class="col-md-4">
-      <h3 class="card-title">
-        <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h3>
-      <h5 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h5>
+    <!-- row for title, date and cat -->
+    <div class="row">
+      <!-- title -->
+      <div class="col-md-4">
+        <h3 class="card-title">
+          <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h3>
+        <h5 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h5>
+      </div>
+
+      <!-- cat and date -->
+      <div>
+        <span class="post-cat">{{ post.categories }}</span>
+        <span class="post-date float-right">{{ post.date | date_to_string }}</span>
+        <div class="clearfix"></div>
+      </div>
     </div>
-
-  </div>
-  <div class="row">
-    <span class="post-cat">{{ post.categories }}</span>
-
-    <span class="post-date float-right">{{ post.date | date_to_string }}</span>
-
-    <div class="clearfix"></div>
-
   </div>
 </div>
 
