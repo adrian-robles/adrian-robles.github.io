@@ -16,13 +16,14 @@
       </h3>
       <h5 class="card-text">{{ post.excerpt | strip_html | truncatewords:25 }}</h5>
     </div>
-    <div class="row">
-      <span class="post-cat">{{ post.categories }}</span>
 
-      <span class="post-date float-right">{{ post.date | date_to_string }}</span>
+  </div>
+  <div class="row">
+    <span class="post-cat">{{ post.categories }}</span>
 
-      <div class="clearfix"></div>
-    </div>
+    <span class="post-date float-right">{{ post.date | date_to_string }}</span>
+
+    <div class="clearfix"></div>
 
   </div>
 </div>
