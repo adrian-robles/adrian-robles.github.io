@@ -7,11 +7,17 @@ comments: true
   {% assign category = post.categories %}
   {% endif %}
 
+  {% for category in categories %}
   {% if category == "project" %}
   {% include  project_icon.html %}
   {% elsif category == "note" %}
   {% include  note_icon.html %}
   {% endif %}
+  
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+
+
 </div>
 
 
