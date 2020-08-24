@@ -3,11 +3,9 @@ layout: default
 comments: true
 ---
 <div class="post-categories">
-  {% if post %}
   {% assign category = post.categories %}
-  {% endif %}
 
-  {% for category in categories %}
+  {% for category in category %}
   {% if category == "project" %}
   {% include  project_icon.html %}
   {% elsif category == "note" %}
@@ -64,7 +62,7 @@ comments: true
   <img class="img-fluid mx-auto mb-4" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
 
   <div class="post-categories d-flex justify-content-between">
-    <p class=""><a href="https://adrian-robles.github.io/pages/blog.html">More like this...</a></p>
+    <p class=""><a href="https://www.roblesadrian.com/pages/blog.html">More like this...</a></p>
   </div>
 
   <!-- {% include disqus.html %} -->
