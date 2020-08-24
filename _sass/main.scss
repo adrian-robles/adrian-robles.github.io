@@ -132,11 +132,20 @@ blockquote {
 
 .post-title {
   font-family: 'Gloria Hallelujah', sans-serif !important;
+  font-size: 1.75rem;
+}
+
+.post-date {
+  font-size: 1.1rem;
 }
 
 .post-icon {
-  width: 5vw;
+  width: 10vw;
   height: auto;
+}
+
+.post-icon span {
+  text-transform: capitalize;
 }
 
 
