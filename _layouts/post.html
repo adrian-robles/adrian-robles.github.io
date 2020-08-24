@@ -4,12 +4,12 @@ comments: true
 ---
 <div class="post-categories">
   {% if post %}
-  {% assign categories = post.categories %}
+  {% assign category = post.categories %}
   {% endif %}
 
-  {% if categories == "project" %}
+  {% if category == "project" %}
   {% include  project_icon.html %}
-  {% elsif categories == "note" %}
+  {% elsif category == "note" %}
   {% include  note_icon.html %}
   {% endif %}
 </div>
