@@ -2,15 +2,37 @@
 layout: default
 comments: true
 ---
-{% if post.categories == "project" %}
-<div class="post-icon">
-  <img src="/assets/images/adrianLogos/ppr.svg" alt="Project Icon" class="img-fluid -mx-auto">
+<div class="post-categories">
+  {% if post %}
+  {% assign categories = post.categories %}
+  {% else %}
+  {% assign categories = page.categories %}
+  {% endif %}
+
+  {% if post.categories == "project" %}
+  {% include  project_icon.html %}
+  {% elseif post.categories == "note" %}
+  {% include  note_icon.html %}
+  {% endif %}
 </div>
-{% elseif post.categories == "note" %}
-<div class="post-icon">
-  <img src="/assets/images/adrianLogos/npr.svg" alt="Project Icon" class="img-fluid -mx-auto">
-</div>
-{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <h1 class="post-title">{{ page.title }}</h1>
