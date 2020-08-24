@@ -36,7 +36,7 @@ f:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
 - {icon: 'fab fa-twitter', link: 'https://twitter.com/aroblesfuentes'}
-- {icon: 'fas fa-envelope', link: 'mailto:aroblesfuentescrc@gmail.com'}
+- {icon: 'fas fa-envelope', link: 'mailto:adrian@roblesadrian.com'}
 - {icon: 'fab fa-github', link: 'https://github.com/adrian-robles'}
 - {icon: 'fab fa-linkedin-in', link: 'https://www.linkedin.com/in/aroblesfuentes/'}
 #- {icon: 'fas fa-rss', link: 'feed.xml'}
