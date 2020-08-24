@@ -5,7 +5,11 @@
         <div class="h-100 card-group">
 
           <div class="card h-100">
-            <img class="featured-box-img-cover d-block mx-auto p-2" src="{{ post.image }}">
+            <img class="featured-box-img-cover d-block mx-auto p-2"
+            src="{% if post.image contains ":/" %}{{ post.image }}
+            {% else %}
+            {{ site.baseurl }}/{{ post.image }}
+            {% endif %}">
 
             <!-- <img class="featured-box-img-cover" src="{% if post.image contains ":/" %}
                 {{ post.image }}
