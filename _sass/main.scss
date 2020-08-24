@@ -119,6 +119,10 @@ button.navbar-toggler {
   font-family: 'Gloria Hallelujah', sans-serif !important;
 }
 
+.card-text {
+  height: auto !important;
+}
+
 blockquote {
   width: 70%;
   margin: 35px auto !important;
@@ -164,7 +168,7 @@ blockquote {
 }
 
 .post-cat {
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 #blog-post {
