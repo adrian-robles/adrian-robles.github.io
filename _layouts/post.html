@@ -7,9 +7,9 @@ comments: true
   {% assign categories = post.categories %}
   {% endif %}
 
-  {% if post.categories == "project" %}
+  {% if categories == "project" %}
   {% include  project_icon.html %}
-  {% elsif post.categories == "note" %}
+  {% elsif categories == "note" %}
   {% include  note_icon.html %}
   {% endif %}
 </div>
