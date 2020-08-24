@@ -2,40 +2,6 @@
 layout: default
 comments: true
 ---
-<div class="post-categories">
-  {% assign category = post.categories %}
-
-  {% for category in category %}
-  {% if category == "project" %}
-  {% include  project_icon.html %}
-  {% elsif category == "note" %}
-  {% include  note_icon.html %}
-  {% endif %}
-  
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h1 class="post-title">{{ page.title }}</h1>
 <div class=" post-data d-flex justify-content-between">
