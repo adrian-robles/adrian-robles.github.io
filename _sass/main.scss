@@ -134,7 +134,7 @@ blockquote {
 
 /* featured posts */
 .featured-box-img-cover {
-  width: 10vw;
+  width: 10vw !important;
   height: auto;
 }
 
@@ -148,6 +148,7 @@ blockquote {
 
 .post-date {
   font-size: 1.1em !important;
+  font-family: 'Kalam', sans-serif !important;
 }
 
 .post-icon {
