@@ -4,7 +4,6 @@ body {
   width: 80vw;
   color: $black-shade1 !important;
 }
-
 p {
   font-size: 1.4em !important;  
 }
@@ -15,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: $black-shade3 !important
+  color: $black-shade4 !important
 }
 
 #horbar {
@@ -28,7 +27,7 @@ a:hover {
 /* logo */
 
 nav {
-  font-family: $base-font-family;
+  font-family: 'Gloria Hallelujah', sans-serif !important;
 }
 
 #ar-logo {
