@@ -18,8 +18,21 @@ ref: blog
 
 		{% assign posts=site.posts | where:"lang", page.lang %}
 
-		{% for post in posts %}
+		{% assign postsPro=posts | where:"categories", "project" %}
+		{% assign postsNote=posts | where:"categories", "note" %}
 
+
+
+
+
+		{% for post in postsPro %}
+		<h2 class="blog-cat">Projects</h2>
+		{% include featuredbox.html %}
+
+		{% endfor %}
+
+		{% for post in postsNote %}
+		<h2 class="blog-cat">Notes</h2>
 		{% include featuredbox.html %}
 
 		{% endfor %}
@@ -28,3 +41,10 @@ ref: blog
 	</div>
 </section>
 <img class="img-fluid mx-auto mb-4" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
+
+
+<!-- 		{% for post in posts %}
+
+		{% include featuredbox.html %}
+
+		{% endfor %} -->
