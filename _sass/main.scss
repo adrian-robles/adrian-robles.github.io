@@ -19,8 +19,8 @@ a:hover {
 }
 
 #horbar {
-  padding-top: 3vh;
-  padding-bottom: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
   opacity: 0.5;
 }
 
@@ -61,7 +61,7 @@ button.navbar-toggler {
       height: 1.5em;
   
        a {
-        font-family: 'Gloria Hallelujah', sans-serif !important;
+        font-family: $base-font-family;
         padding: 0 5px;
         line-height: 1.7em;
         font-weight: 300;
@@ -76,6 +76,8 @@ button.navbar-toggler {
   }
 }
 
+
+
 /* content */
 .content-container {
   position: relative;
@@ -84,9 +86,8 @@ button.navbar-toggler {
 }
 
 /* home page */
-
 #intro {
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family;
 }
 
 #home-pic {
@@ -97,38 +98,17 @@ button.navbar-toggler {
 
 /* blog page content */
 .blog-header {
-  color: $black-shade4;
+  color: $black-shade2;
   font-weight: 700;
   letter-spacing: .1rem;
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   font-size: .9rem;
   text-align: justify;
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family;
 }
 
 .blog-cat {
-  font-family: 'Kalam', sans-serif !important;
-}
-
-.card {
-  font-family: 'Kalam', sans-serif !important;
-}
-
-
-.card-title {
-  font-family: 'Gloria Hallelujah', sans-serif !important;
-}
-
-.card-text {
-  height: auto !important;
-}
-
-blockquote {
-  width: 70%;
-  margin: 35px auto !important;
-  border-left: 2px solid black;
-  padding-left: 10px;
-  font-style: italic;
+  font-family: $body-font-family;
 }
 
 
@@ -138,40 +118,41 @@ blockquote {
   height: auto;
 }
 
-
 /* blog post */
-
-.post-title {
-  font-family: 'Gloria Hallelujah', sans-serif !important;
-  font-size: 1.70rem !important;
-}
-
-.post-date {
-  font-size: 1.1em !important;
-  font-family: 'Kalam', sans-serif !important;
-}
-
-.post-icon {
-  width: 12vw !important;
-  height: auto;
-}
-
-
-
-
 .post-data {
   line-height: 1rem;
   padding-bottom: 0;
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family
 }
 
 .post-data p{
   margin-bottom: 0;
 }
+.post-title {
+  font-family: $base-font-family;
+  font-size: 1.70rem !important;
+}
+
+.post-date {
+  font-size: 1.1em !important;
+  font-family: $body-font-family;
+}
+.post-icon {
+  width: 12vw !important;
+  height: auto;
+}
+
+blockquote {
+  width: 70%;
+  margin: 35px auto !important;
+  border-left: 2px solid $brand-color;
+  padding-left: 10px;
+  font-style: italic;
+}
 
 
 #blog-post {
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family;
 }
 
 #blog-post ul {
@@ -181,8 +162,8 @@ blockquote {
 .blog-img {
   display: flex;
   align-self: center;
-  width: 100%;
-  margin-bottom: 1rem;
+  width: 80%;
+  margin: 3.2rem auto;
 }
 
 /* share box */
@@ -198,7 +179,7 @@ blockquote {
 
 /* resume */
 #res-header {
-  font-family: 'Gloria Hallelujah', sans-serif !important;
+  font-family: $base-font-family;
 }
 
 #res-logo {
@@ -212,12 +193,16 @@ blockquote {
 }
 
 #res-body {
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family;
 }
 
 #pers {
   font-size: .75em;
 }
+#pers ul {
+  font-size: .90em;
+}
+
 
 #down-btn {
   padding: 0;
@@ -226,20 +211,18 @@ blockquote {
 #down-btn a {
   text-decoration: none !important;
 }
-#chrono h6 {
-  font-weight: bold;
-}
+
 
 #chrono ul {
   padding-inline-start: 1rem;
 }
 
 #contact-info {
-  font-family: 'Kalam', sans-serif !important;
+  font-family: $body-font-family;
 }
 
 #contact-info h2 {
-  font-family: 'Gloria Hallelujah', sans-serif !important;
+  font-family: $base-font-family
 }
 
 /* footer */
@@ -312,6 +295,11 @@ large
     height: auto;
   }
 
+
+  #blog-post ul {
+    padding-inline-start: 4rem;
+  }
+
   /* resume */
   #res-img {
     display: inline-block;
@@ -344,6 +332,9 @@ large
     padding-top: 45px !important
   }
 
+  #pers ul {
+    font-size: 1.1em;
+  }
   #res-social-media {
     flex-direction: column;
     margin: 0 !important;
@@ -390,6 +381,10 @@ large
   .post-icon {
     width: 6vw !important;
     height: auto;
+  }
+
+  #blog-post ul {
+    padding-inline-start: 5rem;
   }
 
    /* resume */
