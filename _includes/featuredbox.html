@@ -2,7 +2,7 @@
   <div class="row">
     <!-- icon -->
     <div class="col-md-2">
-      <img class="featured-box-img-cover p-2" src="{% if post.image contains ":/" %}{{ post.image }}
+      <img class="featured-box-img-cover" src="{% if post.image contains ":/" %}{{ post.image }}
         {% else %}
         {{ site.baseurl }}/{{ post.image }}
         {% endif %}">
