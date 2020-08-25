@@ -152,7 +152,7 @@ blockquote {
 }
 
 .post-icon {
-  width: 12vw;
+  width: 12vw !important;
   height: auto;
 }
 
@@ -304,8 +304,14 @@ large
     width: 70vw !important;
   }
 
+  /* featured posts */
+.featured-box-img-cover {
+  width: 8vw !important;
+  height: auto;
+}
+
   .post-icon {
-    width: 8vw;
+    width: 8vw !important;
     height: auto;
   }
 
@@ -378,8 +384,14 @@ large
     width: 60vw !important;
   }
 
+  /* featured posts */
+.featured-box-img-cover {
+  width: 6vw !important;
+  height: auto;
+}
+
   .post-icon {
-    width: 6vw;
+    width: 6vw !important;
     height: auto;
   }
 
