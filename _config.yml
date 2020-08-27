@@ -29,7 +29,7 @@ url: "https://roblesadrian.com" # the base hostname & protocol for your site, e.
 twitter_username: aroblesfuentes
 github_username:  adriancodes
 linkedin_username: aroblesfuentes
-logo: /images/ar-solid-inver-logo.png
+#logo: /images/ar-solid-inver-logo.png
 
 #establish default language as English US
 lang: en-US
