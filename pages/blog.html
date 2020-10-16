@@ -9,7 +9,7 @@ ref: blog
 		steps and I come back to them when I am doing a similar project. Hopefully, you'll find them useful too!</p>
 </div>
 
-<img class="img-fluid mx-auto" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
+<hr>
 
 
 
@@ -26,13 +26,21 @@ ref: blog
 
 
 		{% for post in postsPro %}
-		<h2 class="blog-cat">Projects</h2>
+		<div class="row">
+			<div class="col-1"><i class="fas fa-project-diagram fa-2x"></i></div>
+			<div class="col-11"><h2 class="blog-cat">Projects</h2></div>
+		</div>
+		
+		
 		{% include featuredbox.html %}
 
 		{% endfor %}
 
 		{% for post in postsNote %}
-		<h2 class="blog-cat">Notes</h2>
+		<div class="row">
+			<div class="col-1"><i class="far fa-sticky-note fa-2x"></i></div>
+			<div class="col-11"><h2 class="blog-cat">Notes</h2></div>
+		</div>
 		{% include featuredbox.html %}
 
 		{% endfor %}
@@ -40,4 +48,3 @@ ref: blog
 
 	</div>
 </section>
-<img class="img-fluid mx-auto mb-4" src="/assets/images/adrianLogos/hrb.svg" alt="Horizontal Bar" id="horbar">
