@@ -18,11 +18,6 @@ a:hover {
   color: $black-shade3 !important
 }
 
-#horbar {
-  padding-top: 2vh;
-  padding-bottom: 1vh;
-  opacity: 0.5;
-}
 
 /* navbar */
 /* logo */
@@ -31,15 +26,16 @@ nav {
   font-family: $base-font-family;
 }
 
-#ar-logo {
-  height: auto;
-  width: 60px;
+.nav-link {
+  text-decoration: none !important;
 }
 
-.navbar-toggler-icon {
-  background-image: url(/assets/images/adrianLogos/hbh.svg) !important;
-  background-repeat: no-repeat;
+#ar-logo {
+  height: auto;
+  width: 35px;
 }
+
+
 
 button.navbar-toggler {
   border: none !important;
@@ -263,12 +259,6 @@ large
     font-size: 1.7em;
   }
 
-  #horbar {
-    padding-top: 2vh;
-    padding-bottom: 1vh;
-    opacity: 0.5;
-    width: 1500px;
-  }
 
   /* homepage  .home-pic-mdscreen {
     background-image: url(/assets/images/adrianLogos/mfr.svg) !important;
